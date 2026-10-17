@@ -1,0 +1,34 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: paquetes
+    label: Paquetes turísticos
+    type: collection
+    path: paquetes
+    format: json
+    fields:
+      - name: titulo
+        label: Nombre del paquete
+        type: string
+        required: true
+      - name: destino
+        label: Destino
+        type: string
+      - name: precio
+        label: Precio por persona
+        type: string
+      - name: salida
+        label: Fecha de salida
+        type: string
+      - name: imagen
+        label: Foto del destino
+        type: image
+      - name: incluye
+        label: Servicios incluidos
+        type: text
+      - name: destacado
+        label: Oferta destacada
+        type: boolean
